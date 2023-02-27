@@ -1,0 +1,17 @@
+<h2>Utilizando Interpolation</h2>
+<p>O {{nome}} tem {{idade}} anos e corre {{kms}}</p>
+<p>O {{nome}} tem mais de {{parametroIdade}} anos? -{{idade > parametroIdade}}</p>
+<hr>
+<h2>Utilizando Property Binding</h2>
+<button [disabled]="buttonCheck">{{buttonName}}</button>
+<br>
+<h2>Event Binding</h2>
+<button (click)="Notify()" >Event Binding</button>
+<hr>
+<div (mousemove)="CapturarPosicaoMouse($event)" style="background-color: purple; width: 400px; height: 400px;"></div>
+<p>{{position.x}} {{position.y}}</p>
+<h2>Utilizando Two-Binding</h2>
+<input [(ngModel)]="nome">
+<p>Mudanças: {{nome}}</p>
+<p>Diretivas estruturais</p>
+
